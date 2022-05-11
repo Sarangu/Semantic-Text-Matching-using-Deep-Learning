@@ -16,8 +16,12 @@ Xiaohan Feng ()
 * **candidate_generation.py:** script to run to generate top 'k' candidates (titles) for a user input query
 * **information_retrieval.py:** script to rerank and generate final answers for user input query
 * **transcript.txt:** contains sample run of ```information_retrieval```
-* **embeddings_stack_overflow_answer_titles.txt:** contains embeddings generated for 294,444 titles after runnning ```generate_embeddings```
+* **embeddings_stack_overflow_answer_titles.txt:** Download file using drive link in root directory - contains embeddings generated for 294,444 titles after runnning ```generate_embeddings```
 
+
+ Link to download ```embeddings_stack_overflow_answer_titles``` : https://drive.google.com/file/d/14HhD0uQCo7gZOWE9SzZoqcv5MTE3jjIU/view?usp=sharing
+ 
+ 
 ## Installing Dependencies
 
 ```
