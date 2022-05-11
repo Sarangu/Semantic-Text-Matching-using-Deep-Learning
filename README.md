@@ -19,6 +19,7 @@ Xiaohan Feng (xf2198)
 * **convert_so_csv.py:** convert StackOverflow XML Posts and Links to filtered CSV files.
 * **clean_so_data.py:** create formatted pickle files to serve as inputs for embeddings.
 * **embeddings_stack_overflow_answer_titles.txt:** Download file using drive link in root directory - contains embeddings generated for 294,444 titles after runnning ```generate_embeddings```
+* **Metrics.ipynb:** generates retrieval rate and rank metrics for visualization.
 
 
  Link to download ```embeddings_stack_overflow_answer_titles``` : https://drive.google.com/file/d/14HhD0uQCo7gZOWE9SzZoqcv5MTE3jjIU/view?usp=sharing
