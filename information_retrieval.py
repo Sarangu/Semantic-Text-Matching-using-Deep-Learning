@@ -8,14 +8,13 @@ import os
 import pickle
 import sys
 from scipy import spatial
-
 from transformers import AutoTokenizer, AutoModel
 from candidate_generation import get_sentence_embeddings,generate_candidates,faiss_index
+
 qa_pairs = pd.read_pickle('../formatted_data/stackoverflow/answer_title_body_lookup.pkl')
 qa_pairs_dict = dict(qa_pairs)
 
 def reranking(title_list,query):
-    
     answers_list = []
     query_embedding = get_sentence_embeddings(query)
     
@@ -32,18 +31,14 @@ def reranking(title_list,query):
     
     return ranked_answers
 
-    
-    
-
-
 def main():
     if len(sys.argv) < 2:
         print(f"Incorrect Usage, kindly enter your query")
         return
     
-    query = [sys.argv[1]]
-    
+    query = [sys.argv[1]]    
     question_list = generate_candidates(query)
+    
     print("Candidates generated...Reranking")
             
     ranked_answers = reranking(question_list,query)
