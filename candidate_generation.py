@@ -56,7 +56,7 @@ def get_sentence_embeddings(data):
 def obtain_trained_embeddings():
     #Reading embeddings from pkl file into a list
     objects = []
-    with (open("./embeddings_stack_overflow_answer_titles.txt", "rb")) as openfile:
+    with (open("./embeddings/embeddings_stack_overflow_answer_titles.txt", "rb")) as openfile:
         while True:
             try:
                 objects.append(pickle.load(openfile))
@@ -84,7 +84,6 @@ def generate_candidates(query):
     
     #Calling functions to obtain embeddings of corpus and create faiss index
     embeddings = obtain_trained_embeddings()
-    print(len(embeddings))
     index = faiss_index(embeddings)
     
     candidates = []
@@ -102,5 +101,7 @@ def main():
     
     query = [sys.argv[1]]
     final_candidates = generate_candidates(query)
+    for f in final_candidates:
+        print(f)
 if __name__ == "__main__":
     main()
