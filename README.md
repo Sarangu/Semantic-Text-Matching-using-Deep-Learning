@@ -46,6 +46,8 @@ $ ./information_retrieval.py "<search_query>"
   
 We generate sentence embeddings by performing a max-pooling at the last hidden layer of embeddings. This helps in retaining the contextual/semanntic sense of the sentence, thus performing better for sentence-comparison tasks. The project has 3 core files, each of which serve a distinct purpose:
   
+  Files ```convert_so_csv.py``` and ```clean_so_data.py``` reformat the raw StackOverflow Post and Link datasets (available for download here: https://archive.org/details/stackexchange) into intermediary csv files with all relevant metadata, filters them down to only posts with links, and creates pickle files of the answer universe which are to be embedded in the search space.
+  
   The file ```generate_embeddings```, has the following functionality:
  * **pre-process:** This function reads in unique answer titles from ```unique_answer_titles.pkl```, removes 'nan' values and strips off white spaces.
  * **get_sentence_embeddings:** This function contains the core logic behind creating sentence embeddings for the unique answer titles. It performs the following steps:
