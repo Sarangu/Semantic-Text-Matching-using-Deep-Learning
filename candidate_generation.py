@@ -102,8 +102,5 @@ def main():
     
     query = [sys.argv[1]]
     final_candidates = generate_candidates(query)
-    for i in final_candidates:
-        print(i)
-        print("\n")
 if __name__ == "__main__":
     main()
