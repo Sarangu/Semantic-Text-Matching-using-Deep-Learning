@@ -60,4 +60,4 @@ The file ```information_retrieval``` has the following functionality:
 * Compute sentence embeddings of these answers
 * Finally rank the answers based on cosine similarity between them and user input query, and return to the user
 
-<img src="/path/to/img.jpg" alt="Alt text" title="Optional title">
+<img src="/Assets/Poster.jpg" alt="Alt text" title="Flow diagram">
