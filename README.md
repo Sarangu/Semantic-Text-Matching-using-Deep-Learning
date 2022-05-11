@@ -3,13 +3,13 @@
 ## Team Members
 Aishwarya Sarangu (als2389)
 
-Anusha Holla ()
+Anusha Holla (ah3816)
 
-David Michael Smythe ()
+David Michael Smythe (dms2313)
 
-Priyanka Mishra ()
+Priyanka Mishra (pm3105)
 
-Xiaohan Feng ()
+Xiaohan Feng (xf2198)
 
 ## Submitted Files
 * **generate_embeddings.py:** script to generate sentence embeddings for titles of all answers in the corpus
